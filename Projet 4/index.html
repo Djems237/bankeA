@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Carte Bancaire</title>
+</head>
+<body>
+    <div class="card">
+        <!-- Partie réservée pour l'image de la main -->
+        <div class="hand-image">
+            <img src="Image3.png" alt="Image de la main" height="50px" width="50px">
+        </div>
+        <h1>DISCOUNT EUROPEAN SYSTEM</h1>
+        <h2>EUROPEAN ECONOMIC AND MONETARY UNION</h2>
+        <p>UNION ATM UNIVERSAL ACCOUNT</p>
+        <div class="chip"></div>
+        <div class="details">
+            <p>PIN ATM : 8424</p>
+            <p>4577 9314 1777 5617</p>
+            <p>EUROPEAN CERTIFICATE MONETARY UNION</p>
+            <p>EUROPEAN INTER-CASH MONETARY UNION</p>
+            <p>LOT CCV : 767</p>
+            <p>EXPIRATION : 09/25</p>
+        </div>
+        <div class="indicator"></div>
+    </div>
+
+    <!-- Partie hors de la carte -->
+    <div class="balance-section">
+        <p>NET BALANCE : <span id="balance">0,00 EUR</span></p>
+        <input type="number" id="increase" placeholder="Ajouter montant">
+        <input type="number" id="decrease" placeholder="Soustraire montant">
+        <button onclick="submitForm()">Actualiser</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
